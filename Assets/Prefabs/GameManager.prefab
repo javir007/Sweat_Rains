@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1285370322138840}
+  m_IsPrefabParent: 1
+--- !u!1 &1285370322138840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4918455990890114}
+  - component: {fileID: 114276526499536766}
+  - component: {fileID: 82136405135574012}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4918455990890114
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1285370322138840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &82136405135574012
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1285370322138840}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &114276526499536766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1285370322138840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3b3ae65624f48d3ad9c54dda50884d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: {fileID: 1371350351863838, guid: 23ebff2aa3faf48599f52a130ee78f99, type: 2}
+  coinAmount: 50
+  CoinspawnDelay: 5
+  pausa: 0
+  GameOvered: 0
+  activarIntersticial: 0
+  player: {fileID: 0}
+  spawnDelay: 0.7
+  Panel: {fileID: 0}
+  Canvas: {fileID: 0}
+  timeBetweenWaves: 3
+  waveText: {fileID: 0}
+  CoinsText: {fileID: 0}
+  LifesText: {fileID: 0}
+  moneytxt: {fileID: 0}
+  enemiestxt: {fileID: 0}
+  scoretxt: {fileID: 0}
+  bestscoretxt: {fileID: 0}
+  totalZanahorias: {fileID: 0}
+  enemiesPerWave: 5
+  lateralEnemy: {fileID: 0}
+  waveBanner: {fileID: 0}
+  item: {fileID: 8300000, guid: 488a07561cde14da9a702b1529072b28, type: 3}
+  explo: {fileID: 8300000, guid: bed9aed2132be4bbb84ac1ab8e3fb7eb, type: 3}
+  GameOvertheme: {fileID: 8300000, guid: ac3d7ad4c24754475a5be109a9bc7b08, type: 3}
+  explocion: {fileID: 1282606113783522, guid: 0a6547912d77c482fa8cda1902f0fb5c, type: 2}
+  playerExplo: {fileID: 0}
+  MainCamera: {fileID: 0}
+  AdsButton: {fileID: 0}
+  touchMovemet: {fileID: 0}
+  circleMovement: {fileID: 0}
+  Contador: {fileID: 0}
+  PanelContador: {fileID: 0}
